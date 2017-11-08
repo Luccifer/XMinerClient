@@ -1,0 +1,11 @@
+framework module Xminer {
+  umbrella header "Xminer.h"
+
+  export *
+  module * { export * }
+}
+
+module Xminer.Swift {
+    header "Xminer-Swift.h"
+    requires objc
+}
