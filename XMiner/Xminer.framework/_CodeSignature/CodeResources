@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/Xminer.swiftmodule/arm.swiftdoc</key>
 		<data>
-		WYTD4Y0LJeItxrheA3GsqrcEgM0=
+		OEp4dSVHZO727KpzK870YsMviOI=
 		</data>
 		<key>Modules/Xminer.swiftmodule/arm.swiftmodule</key>
 		<data>
-		8l8I1EeaXsBz68DZ3qvc2jZ/los=
+		eb67PxsMd8xhIi+SVLDGWtXUjbM=
 		</data>
 		<key>Modules/Xminer.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		/qvLNQ55lFQS7m4XcTwZ6UJOfCw=
+		LTKpAcBR/5/iF4ViO3GfnAmwINY=
 		</data>
 		<key>Modules/Xminer.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		paMh8UJLuyHbifvmBR4M6zcofnY=
+		YPmYmKoIpvBNdIgW21Opq0rIRcs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -169,44 +169,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WYTD4Y0LJeItxrheA3GsqrcEgM0=
+			OEp4dSVHZO727KpzK870YsMviOI=
 			</data>
 			<key>hash2</key>
 			<data>
-			HnRb+RA+vVBwV4yRofIq5TjOP2TfKtYQNIcwbc5Zfpc=
+			roGiBj51BIBwfG34EgMgfuBYWPM8nTrRqnNh0lIq0FU=
 			</data>
 		</dict>
 		<key>Modules/Xminer.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8l8I1EeaXsBz68DZ3qvc2jZ/los=
+			eb67PxsMd8xhIi+SVLDGWtXUjbM=
 			</data>
 			<key>hash2</key>
 			<data>
-			o7/VvgzLmF0I7VpymN96L3vzhVX5eAdRqY7P4ghXHqc=
+			N4Uw70knwplf2zcNa2bgdO71jOdvr3tNi5q20FLrDmg=
 			</data>
 		</dict>
 		<key>Modules/Xminer.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/qvLNQ55lFQS7m4XcTwZ6UJOfCw=
+			LTKpAcBR/5/iF4ViO3GfnAmwINY=
 			</data>
 			<key>hash2</key>
 			<data>
-			RXWU5o20oEUe1sisTsTOuc2Cl7nvPVVQ5jDaqK2FW8k=
+			OlZQ3XmP4QtKNYv07zV+QymsdxtvUlCjdgEG5JAMx60=
 			</data>
 		</dict>
 		<key>Modules/Xminer.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			paMh8UJLuyHbifvmBR4M6zcofnY=
+			YPmYmKoIpvBNdIgW21Opq0rIRcs=
 			</data>
 			<key>hash2</key>
 			<data>
-			STm/6qqCDR/0xRsb5L6AKxmt1IteVhu1A1zXKWppeQU=
+			bW9ex+m2WnTrSYmIoVBSXFZ6o60WgIbj5xJH1D5TnRc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
