@@ -10,5 +10,7 @@ Monero miner for iOS
 
 
 Average speed: 14 H/s (all iPhone avaliable cores)
+
 Average temp increase per 10 minutes: 0.8 degrees Celsius 
+
 Stable average tem: 39.2 degress Celsius
