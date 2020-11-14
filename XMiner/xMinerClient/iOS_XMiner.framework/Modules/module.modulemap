@@ -1,0 +1,11 @@
+framework module iOS_XMiner {
+  umbrella header "iOS_XMiner.h"
+
+  export *
+  module * { export * }
+}
+
+module iOS_XMiner.Swift {
+    header "iOS_XMiner-Swift.h"
+    requires objc
+}
