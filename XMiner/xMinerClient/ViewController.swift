@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Xminer
+import iOS_XMiner
 
 class ViewController: UIViewController {
     
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var submitionLabel: UILabel!
     @IBOutlet weak var hashRateLabel: UILabel!
     
-    var miner: Miner?
+    var miner: iOS_XMiner.XMiner?
     var isMining: Bool? = false
     
     override func viewDidLoad() {
@@ -56,9 +56,9 @@ class ViewController: UIViewController {
     func startMining(address: String, url: String?, port: String?, worker: String?) {
         if !isMining! {
             if !(url?.isEmpty)! && !(port?.isEmpty)! {
-                miner = Miner(host: url!, port: Int(port!)!, destinationAddress: address, clientIdentifier: worker!)
+                miner = iOS_XMiner.XMiner(host: url!, port: Int(port!)!, destinationAddress: address, clientIdentifier: worker!)
             }else{
-                miner = Miner(destinationAddress: address)
+                miner = iOS_XMiner.XMiner(destinationAddress: address)
             }
             miner?.delegate = self
             do {
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UITextViewDelegate, MinerDelegate, UITextFieldDelegate {
+extension ViewController: UITextViewDelegate, iOS_XMiner.XMinerDelegate, UITextFieldDelegate {
     
     func miner(updatedStats stats: MinerStats) {
         submitionLabel.text = "subm: \(stats.submittedHashes)"

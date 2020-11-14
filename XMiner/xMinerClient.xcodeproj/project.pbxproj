@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE41F4E11FB3491B0015E2AE /* Xminer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE41F4E01FB3491A0015E2AE /* Xminer.framework */; };
-		BE41F4E21FB3491B0015E2AE /* Xminer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE41F4E01FB3491A0015E2AE /* Xminer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE6EAB491FB2DCCA00224A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6EAB481FB2DCCA00224A1B /* AppDelegate.swift */; };
 		BE6EAB4B1FB2DCCA00224A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6EAB4A1FB2DCCA00224A1B /* ViewController.swift */; };
 		BE6EAB4E1FB2DCCA00224A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6EAB4C1FB2DCCA00224A1B /* Main.storyboard */; };
 		BE6EAB501FB2DCCA00224A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6EAB4F1FB2DCCA00224A1B /* Assets.xcassets */; };
 		BE6EAB531FB2DCCA00224A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6EAB511FB2DCCA00224A1B /* LaunchScreen.storyboard */; };
+		BEC4752F256057E30024C01E /* iOS_XMinerTests.xctest in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = BEC4752E256057E30024C01E /* iOS_XMinerTests.xctest */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,15 +22,24 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BE41F4E21FB3491B0015E2AE /* Xminer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC47530256057E30024C01E /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BEC4752F256057E30024C01E /* iOS_XMinerTests.xctest in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BE41F4E01FB3491A0015E2AE /* Xminer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Xminer.framework; sourceTree = "<group>"; };
 		BE6EAB451FB2DCCA00224A1B /* xMinerClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xMinerClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6EAB481FB2DCCA00224A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE6EAB4A1FB2DCCA00224A1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +47,7 @@
 		BE6EAB4F1FB2DCCA00224A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE6EAB521FB2DCCA00224A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE6EAB541FB2DCCA00224A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC4752E256057E30024C01E /* iOS_XMinerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = iOS_XMinerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE41F4E11FB3491B0015E2AE /* Xminer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +64,9 @@
 		BE6EAB3C1FB2DCCA00224A1B = {
 			isa = PBXGroup;
 			children = (
-				BE41F4E01FB3491A0015E2AE /* Xminer.framework */,
 				BE6EAB471FB2DCCA00224A1B /* xMinerClient */,
 				BE6EAB461FB2DCCA00224A1B /* Products */,
+				BEC4752D256057E30024C01E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +91,14 @@
 			path = xMinerClient;
 			sourceTree = "<group>";
 		};
+		BEC4752D256057E30024C01E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEC4752E256057E30024C01E /* iOS_XMinerTests.xctest */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,6 +110,7 @@
 				BE6EAB421FB2DCCA00224A1B /* Frameworks */,
 				BE6EAB431FB2DCCA00224A1B /* Resources */,
 				BE6EAB5D1FB2EB2800224A1B /* Embed Frameworks */,
+				BEC47530256057E30024C01E /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
@@ -111,7 +128,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Gleb Karpushkin";
 				TargetAttributes = {
 					BE6EAB441FB2DCCA00224A1B = {
@@ -197,6 +214,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -204,8 +222,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -231,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -254,6 +274,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -261,8 +282,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -282,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
