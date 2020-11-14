@@ -12,7 +12,8 @@
 		BE6EAB4E1FB2DCCA00224A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6EAB4C1FB2DCCA00224A1B /* Main.storyboard */; };
 		BE6EAB501FB2DCCA00224A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE6EAB4F1FB2DCCA00224A1B /* Assets.xcassets */; };
 		BE6EAB531FB2DCCA00224A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE6EAB511FB2DCCA00224A1B /* LaunchScreen.storyboard */; };
-		BEC4752F256057E30024C01E /* iOS_XMinerTests.xctest in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = BEC4752E256057E30024C01E /* iOS_XMinerTests.xctest */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BEC4753625605ABB0024C01E /* iOS_XMiner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC4753525605ABB0024C01E /* iOS_XMiner.framework */; };
+		BEC4753725605ABB0024C01E /* iOS_XMiner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BEC4753525605ABB0024C01E /* iOS_XMiner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,19 +23,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BEC4753725605ABB0024C01E /* iOS_XMiner.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BEC47530256057E30024C01E /* Embed PlugIns */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				BEC4752F256057E30024C01E /* iOS_XMinerTests.xctest in Embed PlugIns */,
-			);
-			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -47,7 +38,7 @@
 		BE6EAB4F1FB2DCCA00224A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE6EAB521FB2DCCA00224A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE6EAB541FB2DCCA00224A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BEC4752E256057E30024C01E /* iOS_XMinerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = iOS_XMinerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC4753525605ABB0024C01E /* iOS_XMiner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iOS_XMiner.framework; path = xMinerClient/iOS_XMiner.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEC4753625605ABB0024C01E /* iOS_XMiner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +86,7 @@
 		BEC4752D256057E30024C01E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BEC4752E256057E30024C01E /* iOS_XMinerTests.xctest */,
+				BEC4753525605ABB0024C01E /* iOS_XMiner.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,7 +102,6 @@
 				BE6EAB421FB2DCCA00224A1B /* Frameworks */,
 				BE6EAB431FB2DCCA00224A1B /* Resources */,
 				BE6EAB5D1FB2EB2800224A1B /* Embed Frameworks */,
-				BEC47530256057E30024C01E /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
@@ -322,6 +313,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/xMinerClient",
 				);
 				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = xMinerClient/Info.plist;
@@ -342,6 +334,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/xMinerClient",
 				);
 				GCC_OPTIMIZATION_LEVEL = fast;
 				INFOPLIST_FILE = xMinerClient/Info.plist;
